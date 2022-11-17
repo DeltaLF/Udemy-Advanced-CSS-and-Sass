@@ -4,6 +4,9 @@
 .gallery {
   display: flex;
   &__item {
+    @include respond(phone) {
+      flex: 0 0 33.33%;
+    }
   }
 
   &__photo {

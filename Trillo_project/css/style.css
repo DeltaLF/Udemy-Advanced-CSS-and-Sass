@@ -71,6 +71,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      justify-content: stretch; } }
 
 .content {
   display: flex; }
@@ -92,6 +95,12 @@ body {
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
   font-size: 1.4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .detail {
+      flex-wrap: wrap; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      padding: 1rem 0; } }
 
 .description {
   background-color: #fff;
@@ -99,12 +108,26 @@ body {
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      flex: 0 0 90%;
+      margin: 1rem auto; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      flex: 0 0 100%; } }
 
 .user-review {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .user-review {
+      flex: 0 0 60%;
+      margin: 5rem auto; } }
+  @media only screen and (max-width: 37.5em) {
+    .user-review {
+      flex: 0 0 90%; } }
 
 .side-nav {
   font-size: 1.4rem;
@@ -192,17 +215,28 @@ body {
     height: 2rem;
     width: 2rem;
     fill: var(--color-grey-dark-3); }
+  @media only screen and (max-width: 37.5em) {
+    .search {
+      flex: 1 0 50%; } }
 
 .user-nav {
   align-self: stretch;
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .user-nav {
+      flex: 0 0 auto;
+      justify-items: end; } }
   .user-nav > * {
     padding: 0 2rem;
     cursor: pointer;
     height: 100%;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .user-nav > * {
+        flex: 0 0 auto;
+        margin: 0 auto; } }
   .user-nav > *:hover {
     background-color: var(--color-grey-light-2); }
   .user-nav__icon-box {
@@ -231,6 +265,9 @@ body {
 
 .gallery {
   display: flex; }
+  @media only screen and (max-width: 37.5em) {
+    .gallery__item {
+      flex: 0 0 33.33%; } }
   .gallery__photo {
     width: 100%;
     display: block; }
