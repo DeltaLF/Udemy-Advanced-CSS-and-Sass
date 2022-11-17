@@ -26,6 +26,10 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
   }
   &__stars {
     display: flex;
@@ -58,16 +62,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -0.5rem;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
   }
   &__rating-count {
     font-size: 0.8rem;
     text-transform: uppercase;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0.5rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      text-align: center;
+    }
   }
 }
 
@@ -196,7 +212,7 @@
   margin-bottom: 2rem;
   position: relative;
   overflow: hidden;
-  @media only screen and (max-width: $bg-medium) {
+  @media only screen and (max-width: $bp-medium) {
     margin-bottom: 3rem;
     padding: 2rem;
   }
@@ -254,7 +270,7 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
-  @media only screen and (max-width: $bg-medium) {
+  @media only screen and (max-width: $bp-medium) {
     padding: 2.5rem 0;
   }
   &__book-now {

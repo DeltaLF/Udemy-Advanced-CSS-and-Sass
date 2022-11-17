@@ -21,7 +21,9 @@
 // media deons't accept css variable  so here we use scss variable
 $bp-largest: 75em; // 1200px  (contianer margin)
 $bp-large: 68.75em; // 1100px  (some font size)
-$bg-medium: 56.25em; // 900px
+$bp-medium: 56.25em; // 900px (side bar to horizontal bar)
+$bp-small: 37.5em; // 600px (description, userreivwe cards)
+$bp-smallest: 31.25em; // 500px header search fixes
 
 * {
   margin: 0;
