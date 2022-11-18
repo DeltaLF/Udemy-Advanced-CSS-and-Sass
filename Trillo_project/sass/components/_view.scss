@@ -4,11 +4,29 @@
 .gallery {
   display: flex;
   &__item {
+    position: relative;
   }
 
   &__photo {
     width: 100%;
     display: block;
+    position: relative;
+  }
+  &__item:hover:after {
+    content: "Explorer more";
+    display: block;
+    position: absolute;
+    top: 0;
+    opacity: 0.6;
+    color: #fff;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 28%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-grey-dark-1);
+    cursor: pointer;
   }
 }
 

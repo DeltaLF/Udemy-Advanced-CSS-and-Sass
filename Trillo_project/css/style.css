@@ -287,9 +287,27 @@ body {
 
 .gallery {
   display: flex; }
+  .gallery__item {
+    position: relative; }
   .gallery__photo {
     width: 100%;
-    display: block; }
+    display: block;
+    position: relative; }
+  .gallery__item:hover:after {
+    content: "Explorer more";
+    display: block;
+    position: absolute;
+    top: 0;
+    opacity: 0.6;
+    color: #fff;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 28%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-grey-dark-1);
+    cursor: pointer; }
 
 .overview {
   display: flex;
