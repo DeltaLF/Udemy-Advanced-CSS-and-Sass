@@ -1,5 +1,8 @@
 Grid practice
 https://codepen.io/DeltaLF/pen/oNyoQVX?editors=1100
 
-Grid challenge
+Grid challenge, naming
 https://codepen.io/DeltaLF/pen/QWxOzgJ?editors=1100
+
+Grid implicit, explicit, aligning items, aligning tracks
+https://codepen.io/DeltaLF/pen/XWYVqGb?editors=1100
