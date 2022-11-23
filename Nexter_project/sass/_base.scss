@@ -33,3 +33,28 @@ body {
   font-weight: 300;
   line-height: 1.6;
 }
+
+.container {
+  display: grid;
+  /*
+  some pages need specific height (use vh)
+  some need to be growing with content (use xx-content)
+  */
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns:
+    [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr) [full-end];
+  /*
+  1. set repeat 8 and determine the cols width
+  2. add sidebar
+  3. add 1 fr on both sides of repeat to center it
+  4. name them accordingly
+  5. found out 1fr getting wired while monior shrinking => add minmax
+  */
+  // 140px = 1140/8  1fr:to make repeat part centered
+  & > * {
+    padding: 40px;
+    font-size: 3rem;
+  }
+}
