@@ -17,6 +17,9 @@ $font-display: "Josefin Sans", sans-serif;
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; // 1200 px / 16
 $bp-large: 62.5em; // 1000 px / 16
+$bp-medium: 50em; // 800 px / 16
+$bp-small: 37.5em; // 600 px / 16
+
 
 *,
 *::before,
@@ -79,4 +82,16 @@ body {
       [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
       [center-end] minmax(6rem, 1fr) [full-end];
   }
+  @media only screen and (max-width: $bp-medium){
+    /*
+    move realtors from side to a new row
+    1. adjust header page
+    2. adjust realtor page according
+
+    */
+    grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content min-content repeat(3, min-content);
+    
+
+  };
+
 }
